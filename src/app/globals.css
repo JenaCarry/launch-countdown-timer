@@ -5,18 +5,18 @@
 @layer base {
   body {
     @apply min-h-screen bg-very-dark-blue text-grayish-blue flex items-center justify-center;
-    /* background-image: url("/pattern-hills.svg"), url("/bg-stars.svg");
+    background-image: url("/pattern-hills.svg"), url("/bg-stars.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: bottom right;
-    background-size: 200% 20%, cover; */
+    background-size: 200% 20%, cover;
   }
 }
 
 @layer utilities {
   .card {
     @apply after:content-[""] after:w-full after:h-[1px] after:bg-very-dark-black-blue/25 after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:z-20;
-    /* -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d; */
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
   }
 
   .topSide,
@@ -30,18 +30,18 @@
     @apply bg-dark-desaturated-blue brightness-[0.85];
   }
 
-  /* .botSide {
+  .botSide {
     -webkit-transform: rotateX(30deg);
     transform: rotateX(30deg);
-  } */
+  }
 
-  /* .flipper.top {
+  .flipper.top {
     animation: hideTop 0.25s linear forwards;
   }
 
   .flipper.bot {
     animation: showBottom 0.25s linear forwards;
-  } */
+  }
 
   .flipper.bot + .botSide {
     @apply brightness-[0.8] transition-all duration-[250ms];
