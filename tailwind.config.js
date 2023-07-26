@@ -6,12 +6,14 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      "grayish-blue": "hsl(237, 18%, 59%)",
-      "soft-red": "hsl(345, 95%, 68%)",
-      "dark-desaturated-blue": "hsl(236, 21%, 26%)",
-      "very-dark-blue": "hsl(235, 16%, 14%)",
-      "very-dark-black-blue": "hsl(234, 17%, 12%)",
+    extend: {
+      colors: {
+        "grayish-blue": "hsl(237, 18%, 59%)",
+        "soft-red": "hsl(345, 95%, 68%)",
+        "dark-desaturated-blue": "hsl(236, 21%, 26%)",
+        "very-dark-blue": "hsl(235, 16%, 14%)",
+        "very-dark-black-blue": "hsl(234, 17%, 12%)",
+      },
     },
   },
   plugins: [],
