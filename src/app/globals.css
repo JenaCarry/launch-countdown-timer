@@ -2,26 +2,92 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  body {
+    @apply min-h-screen bg-very-dark-blue text-grayish-blue flex items-center justify-center;
+    background-image: url("/pattern-hills.svg"), url("/bg-stars.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom right;
+    background-size: 200% 20%, cover;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.card {
+  @apply after:content-[''] after:w-full after:h-[1px] after:bg-very-dark-black-blue/25 after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:z-20;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.topSide,
+.botSide,
+.flipper {
+  @apply w-full h-full text-4xl flex items-center justify-center absolute top-0 left-0 rounded-md overflow-hidden;
+}
+
+.topSide,
+.flipper {
+  @apply bg-dark-desaturated-blue brightness-[0.85];
+}
+
+.botSide {
+  -webkit-transform: rotateX(30deg);
+  transform: rotateX(30deg);
+}
+
+.flipper.top {
+  animation: hideTop 0.25s linear forwards;
+}
+
+.flipper.bot {
+  animation: showBottom 0.25s linear forwards;
+}
+
+.flipper.bot + .botSide {
+  @apply brightness-[0.8] transition-all duration-[250ms];
+}
+
+.topSide::before,
+.topSide::after,
+.botSide::before,
+.botSide::after,
+.flipper::before,
+.flipper::after {
+  @apply content-[''] absolute w-2 h-2 top-1/2 -translate-y-1/2 bg-very-dark-blue rounded-full z-10;
+}
+
+.topSide::before,
+.botSide::before,
+.flipper::before {
+  @apply -left-1;
+}
+
+.topSide::after,
+.botSide::after,
+.flipper::after {
+  @apply -right-1;
+}
+
+@keyframes hideTop {
+  0% {
+    filter: brightness(0.85);
+    transform: rotateX(0deg);
+    visibility: visible;
+  }
+  100% {
+    filter: brightness(0.5);
+    transform: rotateX(-90deg);
+    visibility: hidden;
+  }
+}
+
+@keyframes showBottom {
+  0% {
+    filter: brightness(1.2);
+    visibility: visible;
+    transform: rotateX(90deg);
+  }
+  100% {
+    filter: brightness(1);
+    transform: rotateX(30deg);
+  }
 }
