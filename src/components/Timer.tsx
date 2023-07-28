@@ -24,17 +24,15 @@ export function Timer() {
   const second = time % 60;
 
   return (
-    <section>
-      <h2 className="w-full max-[481px]:max-w-xs max-[481px]:text-xl text-2xl uppercase text-white mb-14 tracking-[0.25rem]">
-        We're launching soon
-      </h2>
+    <main>
+      <h2 className="sr-only">Launch countdown timer</h2>
       <div className="flex items-center justify-center gap-3 min-[375px]:gap-4">
         <Counter name="Days" value={day} />
         <Counter name="Hours" value={hour} />
         <Counter name="Minutes" value={minute} />
         <Counter name="Seconds" value={second} />
       </div>
-    </section>
+    </main>
   );
 }
 

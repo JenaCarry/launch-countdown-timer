@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply min-h-screen bg-very-dark-blue text-grayish-blue flex items-center justify-center;
+    @apply min-h-screen text-center bg-very-dark-blue text-grayish-blue grid grid-rows-3 items-center justify-center;
     background-image: url("/pattern-hills.svg"), url("/bg-stars.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: bottom right;
@@ -91,5 +91,9 @@
       filter: brightness(1);
       transform: rotateX(30deg);
     }
+  }
+
+  a {
+    @apply text-2xl hover:text-soft-red;
   }
 }
