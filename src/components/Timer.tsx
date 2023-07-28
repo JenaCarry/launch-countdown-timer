@@ -25,7 +25,7 @@ export function Timer() {
 
   return (
     <section>
-      <h2 className="uppercase text-white mb-14 text-2xl tracking-[0.25rem]">
+      <h2 className="w-full max-[481px]:max-w-xs max-[481px]:text-xl text-2xl uppercase text-white mb-14 tracking-[0.25rem]">
         We're launching soon
       </h2>
       <div className="flex items-center justify-center gap-3 min-[375px]:gap-4">
