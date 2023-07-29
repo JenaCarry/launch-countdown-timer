@@ -14,6 +14,10 @@ module.exports = {
         "very-dark-blue": "hsl(235, 16%, 14%)",
         "very-dark-black-blue": "hsl(234, 17%, 12%)",
       },
+      backgroundImage: {
+        stars: "url('/bg-stars.svg')",
+        "pattern-hills": "url('/pattern-hills.svg')",
+      },
     },
   },
   plugins: [],

@@ -4,11 +4,7 @@
 
 @layer base {
   body {
-    @apply min-h-screen text-center bg-very-dark-blue text-grayish-blue grid grid-rows-3 items-center justify-center;
-    background-image: url("/pattern-hills.svg"), url("/bg-stars.svg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: bottom right;
-    background-size: 200% 20%, cover;
+    @apply min-h-screen text-center bg-very-dark-blue bg-stars text-grayish-blue grid grid-rows-[150px_1fr_200px] grid-cols-1 justify-center;
   }
 }
 
