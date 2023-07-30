@@ -18,7 +18,7 @@
   .topSide,
   .botSide,
   .flipper {
-    @apply w-full h-full text-4xl flex items-center justify-center absolute top-0 left-0 rounded-md overflow-hidden;
+    @apply w-full h-full text-4xl sm:text-6xl flex items-center justify-center absolute top-0 left-0 rounded-md overflow-hidden;
   }
 
   .topSide,

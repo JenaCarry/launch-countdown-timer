@@ -30,14 +30,16 @@ export function Counter({ name, value }: CounterProps) {
 
   return (
     <div>
-      <div className="card w-[70px] h-[70px] text-soft-red relative">
+      <div className="card w-[70px] h-[70px] sm:w-28 sm:h-28 text-soft-red relative">
         <div className="topSide z-10">{top}</div>
         <div className={`flipper ${status} z-20`}>{flipper}</div>
-        <div className="botSide bg-dark-desaturated-blue shadow-[0_6px_0_rgb(25,26,36)]">
+        <div className="botSide bg-dark-desaturated-blue shadow-[0_6px_0_rgb(25,26,36)] sm:shadow-[0_9px_0_rgb(25,26,36)]">
           {bottom}
         </div>
       </div>
-      <h3 className="uppercase text-[10px] tracking-wider mt-3">{name}</h3>
+      <h3 className="uppercase text-[10px] tracking-wider mt-3 sm:text-sm sm:tracking-widest">
+        {name}
+      </h3>
     </div>
   );
 }
