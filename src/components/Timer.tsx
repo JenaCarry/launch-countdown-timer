@@ -24,7 +24,7 @@ export function Timer() {
   const second = time % 60;
 
   return (
-    <main className="mt-14">
+    <main className="mt-14 sm:mt-24">
       <h2 className="sr-only">Launch countdown timer</h2>
       <div className="flex items-center justify-center gap-3 min-[375px]:gap-4">
         <Counter name="Days" value={day} />
