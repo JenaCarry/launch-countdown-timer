@@ -37,7 +37,7 @@ export function Counter({ name, value }: CounterProps) {
           {bottom}
         </div>
       </div>
-      <h3 className="uppercase text-[10px] tracking-wider mt-3 sm:text-sm sm:tracking-widest">
+      <h3 className="uppercase text-[10px] tracking-wider mt-3 sm:mt-5 sm:text-sm sm:tracking-widest">
         {name}
       </h3>
     </div>
