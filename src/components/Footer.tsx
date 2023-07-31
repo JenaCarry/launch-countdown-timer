@@ -7,17 +7,17 @@ export function Footer() {
     <footer className="grid items-end bg-pattern-hills bg-no-repeat bg-right-bottom bg-[length:220%_100%] sm:bg-bottom sm:bg-[length:100%_100%]">
       <ul className="flex items-center justify-center gap-8 mb-11">
         <li>
-          <a href="#">
+          <a aria-label="Facebook" href="#">
             <FaFacebookSquare />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a aria-label="Pinterest" href="#">
             <FaPinterest />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a aria-label="Instagram" href="#">
             <FaInstagram />
           </a>
         </li>
