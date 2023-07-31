@@ -90,6 +90,6 @@
   }
 
   a {
-    @apply text-2xl hover:text-soft-red;
+    @apply text-2xl hover:text-soft-red transition-all duration-200 ease-in-out;
   }
 }
