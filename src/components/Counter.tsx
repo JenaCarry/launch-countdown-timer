@@ -24,7 +24,7 @@ export function Counter({ name, value }: CounterProps) {
 
       setTimeout(() => {
         setBottom(newValue);
-      }, 250);
+      }, 500);
     }, 250);
   }, [value]);
 

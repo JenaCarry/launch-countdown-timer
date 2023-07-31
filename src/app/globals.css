@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply min-h-screen text-center bg-very-dark-blue bg-stars text-grayish-blue grid grid-rows-[150px_1fr_200px] grid-cols-1 justify-center;
+    @apply min-h-screen text-center bg-very-dark-blue bg-stars text-grayish-blue grid grid-rows-[150px_1fr_170px] grid-cols-1 justify-center;
   }
 }
 
