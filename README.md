@@ -5,7 +5,7 @@
   <h2>Launch countdown timer</h2>
 
   <h3>
-    <a href="">
+    <a href="https://www.frontendmentor.io/solutions/launch-countdown-timer-QtiiGV4QgL">
       <strong>Frontend Mentor</strong>
     </a>
   </h3>
@@ -34,7 +34,7 @@ This is a solution to the [Launch countdown timer challenge on Frontend Mentor](
 
 <h2>Links</h2>
 
-- Solution URL: [Launch countdown timer | Frontend Mentor]()
+- Solution URL: [Launch countdown timer | Frontend Mentor](https://www.frontendmentor.io/solutions/launch-countdown-timer-QtiiGV4QgL)
 - Live Site URL: [https://launch-countdown-timer-black-rho.vercel.app/](https://launch-countdown-timer-black-rho.vercel.app/)
 
 <br>
